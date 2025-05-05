@@ -23,7 +23,6 @@ hello:
 #    path: /v3/api-docs
 #    enabled: true
 
-
 springdoc:
   api-docs:
     path: /v3/api-docs
@@ -33,10 +32,22 @@ springdoc:
     tags-sorter: alpha
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
     
-# http://localhost:7778/swagger-ui/index.html
+# http://localhost:1112/swagger-ui/index.html
 app:
   openapi:
     local-url: http://localhost:${server.port}
     dev-url: http://10.0.0.137:${server.port}
     homol-url: http://10.0.0.137:${server.port}
     prod-url: https://10.0.0.137:${server.port}
+
+## uri de gr-conf-swagger-aggregator
+swagger:
+  aggregator:
+    cors:
+      uri: ${aggregator.cors.uri}
+
+eureka:
+  instance:
+    metadata-map:
+      # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'' (désactiver le sinon sinon).
+      swagger.aggregator.enabled: ${aggregator.eureka.enabled}

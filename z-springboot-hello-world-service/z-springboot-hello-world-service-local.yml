@@ -5,14 +5,8 @@ hello:
     helloprop2: hello-local 2
     helloprop3: hello-local 3
 
-## uri de gr-conf-swagger-aggregator
-swagger:
-  aggregator:
-    cors:
-      uri: http://localhost:8765
-
-eureka:
-  instance:
-    metadata-map:
-      # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'' (désactiver le sinon sinon).
-      swagger.aggregator.enabled: true
+## uri/enabled de gr-conf-swagger-aggregator
+aggregator:
+  eureka.enabled: true
+  cors:
+    uri: http://localhost:8765
