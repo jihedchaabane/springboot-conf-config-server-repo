@@ -37,8 +37,8 @@ app:
   openapi:
     local-url: http://localhost:${server.port}
     dev-url: http://10.0.0.137:${server.port}
-    homol-url: http://10.0.0.137:${server.port}
-    prod-url: https://10.0.0.137:${server.port}
+    homol-url: http://10.0.0.500:${server.port}
+    prod-url: https://10.0.0.600:${server.port}
 
 ## uri de gr-conf-swagger-aggregator
 swagger:
