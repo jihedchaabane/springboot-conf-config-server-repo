@@ -2,4 +2,4 @@
 aggregator:
   eureka.enabled: true
   cors:
-    uri: http://container-gr-conf-swagger-aggregator:8765
+    uri: http://10.0.0.500:8765
