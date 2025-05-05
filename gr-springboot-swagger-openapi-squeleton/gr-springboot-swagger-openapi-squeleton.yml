@@ -28,10 +28,10 @@ springdoc:
 # http://localhost:1112/swagger-ui/index.html
 app:
   openapi:
-    local-url: http://localhost:${server.port}
-    dev-url: http://10.0.0.137:${server.port}
-    homol-url: http://10.0.0.500:${server.port}
-    prod-url: https://10.0.0.600:${server.port}
+    local-url: http://${host.ip}:${server.port}
+    dev-url: http://${host.ip}:${server.port}
+    homol-url: http://${host.ip}:${server.port}
+    prod-url: https://${host.ip}:${server.port}
 
 ## uri de gr-conf-swagger-aggregator
 swagger:

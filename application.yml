@@ -1,3 +1,6 @@
+host:
+  #ip: ${DOCKER_IP:localhost}
+  ip: ${DOCKER_IP:10.0.0.137}
 
 eureka:
   client:
@@ -7,7 +10,7 @@ eureka:
     register-with-eureka: true
   instance:
     preferIpAddress: true
-    ipAddress: localhost
+    ipAddress: ${host.ip}
     hostname: ${spring.application.name}
 
 management:
