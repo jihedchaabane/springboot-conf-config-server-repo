@@ -1,9 +1,9 @@
-msg: homol..
+msg: local..
 
 props:
-  property1: homol 1..
-  property2: homol 2..
-  property3: homol 3..
+  property1: local 1..
+  property2: local 2..
+  property3: local 3..
   property5: ${property5}
 
 ## uri de gr-conf-swagger-aggregator
