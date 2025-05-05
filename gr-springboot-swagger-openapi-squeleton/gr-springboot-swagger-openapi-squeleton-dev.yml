@@ -1,4 +1,3 @@
-docker.ip: 10.0.0.137
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

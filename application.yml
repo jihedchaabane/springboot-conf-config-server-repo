@@ -1,6 +1,6 @@
-host:
-  ip: ${docker.ip:localhost}
-  #ip: ${docker.ip:10.0.0.137}
+
+host.where.docker.ip: localhost
+#host.where.docker.ip: 10.0.0.137
 
 eureka:
   client:
@@ -8,9 +8,10 @@ eureka:
       defaultZone: ${EUREKA_ADDR:http://localhost:8761/eureka/}
     fetch-registry: true
     register-with-eureka: true
+## gr-conf-swagger-aggregator
   instance:
     preferIpAddress: true
-    ipAddress: ${host.ip}
+    ipAddress: ${host.where.docker.ip}
     hostname: ${spring.application.name}
 
 management:

@@ -1,6 +1,5 @@
-docker.ip: localhost
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
   cors:
-    uri: http://${host.ip}:8765
+    uri: http://localhost:8765
