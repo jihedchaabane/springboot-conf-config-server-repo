@@ -1,8 +1,14 @@
+--# ONCE------------------------------------------------
 sudo mkdir springboot-conf-config-server-repo
+--------------------------------------------------------
 
 # repo git local dans jenkins pour le ConfigServer : [au lieu du repo git]
-cd /var/lib/jenkins/workspace/spring-boot-conf-config-server-repo
+cd /var/lib/jenkins/workspace/springboot-conf-config-server-repo
 
+--# ONCE------------------------------------------------
+sudo git init
+sudo branch -M main
+--------------------------------------------------------
 sudo rm application.yml README.md
 sudo rm -rf *
 
@@ -10,6 +16,7 @@ sudo git clone https://github.com/jihedchaabane/springboot-conf-config-server-re
 sudo mv springboot-conf-config-server-repo/* ../springboot-conf-config-server-repo/
 sudo rm -rf springboot-conf-config-server-repo
 
+--------------------------------------------------------
 sudo git status
 sudo git add .
 sudo git commit -m ".."
