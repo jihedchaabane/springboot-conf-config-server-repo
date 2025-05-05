@@ -4,3 +4,39 @@ hello:
     helloprop1: hello-default 1
     helloprop2: hello-default 2
     helloprop3: hello-default 3
+
+#springdoc:
+#  swagger-ui:
+#    urls:
+#      # Les URLs seront configurées dynamiquement
+#    disable-swagger-default-url: true
+#  api-docs:
+#    enabled: true
+
+
+#springdoc:
+#  swagger-ui:
+#    path: /swagger-ui.html
+#    disable-swagger-default-url: true
+#    urls: []
+#  api-docs:
+#    path: /v3/api-docs
+#    enabled: true
+
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+  show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
+    
+# http://localhost:7778/swagger-ui/index.html
+app:
+  openapi:
+    local-url: http://localhost:${server.port}
+    dev-url: http://10.0.0.137:${server.port}
+    homol-url: http://10.0.0.137:${server.port}
+    prod-url: https://10.0.0.137:${server.port}
