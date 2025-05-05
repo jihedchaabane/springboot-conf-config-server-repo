@@ -1,0 +1,6 @@
+foo:
+  msg: foo-default
+  props:
+    fooprop1: foo-default 1
+    fooprop2: foo-default 2
+    fooprop3: foo-default 3

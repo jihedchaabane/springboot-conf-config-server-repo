@@ -1,0 +1,4 @@
+
+parms:
+  oauth2:
+    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764

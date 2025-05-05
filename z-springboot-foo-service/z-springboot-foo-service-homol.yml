@@ -1,0 +1,6 @@
+foo:
+  msg: foo-homol
+  props:
+    fooprop1: foo-homol 1
+    fooprop2: foo-homol 2
+    fooprop3: foo-homol 3

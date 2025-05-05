@@ -1,0 +1,6 @@
+hello:
+  msg: hello-homol
+  props:
+    helloprop1: hello-homol 1
+    helloprop2: hello-homol 2
+    helloprop3: hello-homol 3

@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          products-client-client-credentials:
+            provider: spring
+            client-id: ${params.oauth2.clientId}
+            client-secret: ${params.oauth2.clientSecret}
+            authorization-grant-type: client_credentials
+            client-name: products-client-client-credentials
+            scope: ${params.oauth2.scope}
+        provider:
+          spring:
+            issuer-uri: ${params.oauth2.issuerUri}
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG

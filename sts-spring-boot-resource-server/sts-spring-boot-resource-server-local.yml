@@ -1,0 +1,4 @@
+
+parms:
+  oauth2:
+    issuerUri: http://localhost:8764

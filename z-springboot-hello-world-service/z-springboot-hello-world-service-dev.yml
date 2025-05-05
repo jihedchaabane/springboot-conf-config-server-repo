@@ -1,0 +1,6 @@
+hello:
+  msg: hello-dev
+  props:
+    helloprop1: hello-dev 1
+    helloprop2: hello-dev 2
+    helloprop3: hello-dev 3

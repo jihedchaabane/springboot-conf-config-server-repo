@@ -1,0 +1,6 @@
+foo:
+  msg: foo-prod
+  props:
+    fooprop1: foo-prod 1
+    fooprop2: foo-prod 2
+    fooprop3: foo-prod 3

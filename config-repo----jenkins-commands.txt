@@ -1,0 +1,16 @@
+
+# repo git local dans jenkins pour le ConfigServer : [au lieu du repo git]
+cd /var/lib/jenkins/workspace/spring-boot-conf-config-server-repo
+
+sudo rm application.yml README.md
+sudo rm -rf *
+
+sudo git clone https://github.com/jihedchaabane/spring-boot-conf-config-server-repo.git
+sudo mv spring-boot-conf-config-server-repo/* ../spring-boot-conf-config-server-repo/
+sudo rm -rf spring-boot-conf-config-server-repo
+
+sudo git status
+sudo git add .
+sudo git commit -m ".."
+
+

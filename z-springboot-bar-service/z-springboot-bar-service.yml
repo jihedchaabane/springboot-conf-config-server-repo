@@ -1,0 +1,7 @@
+msg: default
+
+props:
+  property1: default 1
+  property2: default 2
+  property3: default 3
+  property6: ${property6}

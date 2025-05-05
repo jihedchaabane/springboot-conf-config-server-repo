@@ -1,0 +1,6 @@
+hello:
+  msg: hello-default
+  props:
+    helloprop1: hello-default 1
+    helloprop2: hello-default 2
+    helloprop3: hello-default 3

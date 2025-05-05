@@ -1,0 +1,7 @@
+msg: prod
+
+props:
+  property1: prod 1
+  property2: prod 2
+  property3: prod 3
+  property5: ${property5}
