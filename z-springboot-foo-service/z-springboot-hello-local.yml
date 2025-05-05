@@ -1,9 +1,9 @@
 foo:
-  msg: foo-dev
+  msg: foo-local
   props:
-    fooprop1: foo-dev 1
-    fooprop2: foo-dev 2
-    fooprop3: foo-dev 3
+    fooprop1: foo-local 1
+    fooprop2: foo-local 2
+    fooprop3: foo-local 3
 
 ## uri de gr-conf-swagger-aggregator
 swagger:
