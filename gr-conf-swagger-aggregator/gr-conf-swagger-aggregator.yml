@@ -28,4 +28,5 @@ springdoc:
 
 eureka:
   client:
-    registry-fetch-interval-seconds: 40  # Rafraîchir le registre toutes les 60 secondes
+    # Rafraîchir le registre toutes les X secondes
+    registry-fetch-interval-seconds: ${eureka.fetch.seconds}
