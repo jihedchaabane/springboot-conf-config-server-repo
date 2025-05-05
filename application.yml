@@ -1,6 +1,6 @@
 host:
-  #ip: ${DOCKER_IP:localhost}
-  ip: ${DOCKER_IP:10.0.0.137}
+  #ip: ${docker.ip:localhost}
+  ip: ${docker.ip:10.0.0.137}
 
 eureka:
   client:

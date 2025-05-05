@@ -1,3 +1,4 @@
+docker.ip: localhost
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
