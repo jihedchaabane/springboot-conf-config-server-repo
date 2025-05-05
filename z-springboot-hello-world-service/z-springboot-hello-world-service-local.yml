@@ -1,9 +1,9 @@
 hello:
-  msg: hello-dev
+  msg: hello-local
   props:
-    helloprop1: hello-dev 1
-    helloprop2: hello-dev 2
-    helloprop3: hello-dev 3
+    helloprop1: hello-local 1
+    helloprop2: hello-local 2
+    helloprop3: hello-local 3
 
 ## uri de gr-conf-swagger-aggregator
 swagger:
