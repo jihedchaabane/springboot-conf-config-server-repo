@@ -1,9 +1,9 @@
-msg: dev..
+msg: bar-dev..
 
 props:
-  property1: dev 1..
-  property2: dev 2..
-  property3: dev 3..
+  property1: bar-dev 1..
+  property2: bar-dev 2..
+  property3: bar-dev 3..
   property5: ${property5}
 
 ## uri de gr-conf-swagger-aggregator
