@@ -1,15 +1,16 @@
-foo:
-  msg: foo-prod
-  props:
-    fooprop1: foo-prod 1
-    fooprop2: foo-prod 2
-    fooprop3: foo-prod 3
+msg: homol..
+
+props:
+  property1: homol 1..
+  property2: homol 2..
+  property3: homol 3..
+  property5: ${property5}
 
 ## uri de gr-conf-swagger-aggregator
 swagger:
   aggregator:
     cors:
-      uri: http://container-gr-conf-swagger-aggregator:8765
+      uri: http://localhost:8765
 
 eureka:
   instance:
