@@ -1,0 +1,31 @@
+spring:
+  cloud:
+    gateway:
+      #discovery:
+        #locator:
+          #enabled: true
+          #lower-case-service-id: true
+      routes:
+        - id: GR-SPRINGBOOT-SWAGGER-OPENAPI-SQUELETON
+          uri: http://container-gr-springboot-swagger-openapi-squeleton:1112
+          predicates:
+            - Path=/squeleton/get/**, /squeleton/post/**
+        - id: Z-SPRINGBOOT-FOO-SERVICE
+          uri: http://container-z-springboot-foo-service:7778
+          predicates:
+            - Path=/foo/**
+        - id: Z-SPRINGBOOT-BAR-SERVICE
+          uri: http://container-z-springboot-bar-service:7777
+          predicates:
+            - Path=/bar/**
+        - id: Z-SPRINGBOOT-HELLO
+          uri: http://container-z-springboot-hello:7775
+          predicates:
+            - Path=/hello/**
+        - id: Z-SPRINGBOOT-HELLO-WORLD-SERVICE
+          uri: http://container-z-springboot-hello-world-service:7775
+          predicates:
+            - Path=/helloservice/**
+			
+
+
