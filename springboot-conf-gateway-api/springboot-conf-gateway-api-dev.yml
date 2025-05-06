@@ -26,6 +26,5 @@ spring:
           uri: http://container-z-springboot-hello-world-service:7775
           predicates:
             - Path=/helloservice/**
-			
 
 
