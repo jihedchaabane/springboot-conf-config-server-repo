@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: ms1
+          uri: lb://SPRINGBOOT-OAUTH2-CLIENT1
+          predicates:
+            - Path=/ms1/**
+          filters:
+            - StripPrefix=1
+        - id: ms2
+          uri: lb://SPRINGBOOT-OAUTH2-CLIENT2
+          predicates:
+            - Path=/ms2/**
+          filters:
+            - StripPrefix=1
+        ####################################################################
+        - id: ms3
+          uri: lb://STS-SPRING-BOOT-RESOURCE-SERVER
+          predicates:
+            - Path=/ms3/**
+          filters:
+            - StripPrefix=1
+         ####################################################################
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${params.oauth2.issuerUri}
+
+  zipkin:
+    base-url: ${params.zipkin.uri}
+  sleuth:
+    sampler:
+      probability: 1.0
