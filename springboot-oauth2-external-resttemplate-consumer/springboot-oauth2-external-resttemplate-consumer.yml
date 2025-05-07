@@ -15,12 +15,12 @@ api:
 authorization:
   server:
     url: ${params.oauth2.issuerUri}/oauth2/token
-    ms1:
-      client-id: ${params.oauth2.client1.clientId}
-      client-secret: ${params.oauth2.client1.clientSecret}
-      scope: ${params.oauth2.client1.scope}
-    ms2:
-      client-id: ${params.oauth2.client2.clientId}
-      client-secret: ${params.oauth2.client2.clientId}
-      scope: ${params.oauth2.client2.scope}
+  ms1:
+    clientId: ${params.oauth2.client1.clientId}
+    clientSecret: ${params.oauth2.client1.clientSecret}
+    scope: ${params.oauth2.client1.scope}
+  ms2:
+    client-id: ${params.oauth2.client2.clientId}
+    client-secret: ${params.oauth2.client2.clientId}
+    scope: ${params.oauth2.client2.scope}
 
