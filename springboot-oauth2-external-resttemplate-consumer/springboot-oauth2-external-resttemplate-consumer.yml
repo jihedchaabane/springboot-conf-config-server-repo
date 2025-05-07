@@ -20,7 +20,7 @@ authorization:
     clientSecret: ${params.oauth2.client1.clientSecret}
     scope: ${params.oauth2.client1.scope}
   ms2:
-    client-id: ${params.oauth2.client2.clientId}
-    client-secret: ${params.oauth2.client2.clientId}
+    clientId: ${params.oauth2.client2.clientId}
+    clientSecret: ${params.oauth2.client2.clientId}
     scope: ${params.oauth2.client2.scope}
 
