@@ -12,6 +12,6 @@ params:
       scope: read
     
   zipkin:
-    uri: htt://localhost:9411
+    uri: http://localhost:9411
   gateway:
     uri: http://localhost:7766

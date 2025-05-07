@@ -12,6 +12,6 @@ params:
       scope: read
     
   zipkin:
-    uri: htt://container-zipkin:9411
+    uri: http://container-zipkin:9411
   gateway:
     uri: http://container-springboot-conf-gateway-api-oauth2:7766

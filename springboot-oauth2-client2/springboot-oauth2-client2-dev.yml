@@ -6,4 +6,4 @@ params:
     scope: read
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   zipkin:
-    uri: htt://container-zipkin:9411
+    uri: http://container-zipkin:9411
