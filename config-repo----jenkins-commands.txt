@@ -8,7 +8,6 @@ sudo branch -M main
 # repo git local dans jenkins pour le ConfigServer : [au lieu du repo git]
 cd /var/lib/jenkins/workspace/springboot-conf-config-server-repo
 
---------------------------------------------------------
 sudo rm -rf *
 
 sudo git clone https://github.com/jihedchaabane/springboot-conf-config-server-repo.git
