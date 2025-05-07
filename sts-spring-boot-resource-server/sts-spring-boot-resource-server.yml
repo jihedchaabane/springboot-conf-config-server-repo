@@ -4,7 +4,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: ${parms.oauth2.issuerUri}
+          issuer-uri: ${params.oauth2.issuerUri}
 
 logging:
   level:

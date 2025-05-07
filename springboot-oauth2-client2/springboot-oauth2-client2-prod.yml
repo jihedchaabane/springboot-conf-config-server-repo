@@ -1,0 +1,9 @@
+
+params:
+  oauth2:
+    clientId: client2
+    clientSecret: secret2
+    scope: read
+    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
+  zipkin:
+    uri: htt://container-zipkin:9411

@@ -1,0 +1,30 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          client1:
+            client-id: ${params.oauth2.clientId}
+            client-secret: ${params.oauth2.clientSecret}
+            authorization-grant-type: client_credentials
+            scope: ${params.oauth2.scope}
+        provider:
+          client1:
+            token-uri: ${params.oauth2.issuerUri}/oauth2/token
+            # Explicitly disable user-info and authorization endpoints (not used in client_credentials)
+            authorization-uri: ${params.oauth2.issuerUri}/oauth2/authorize
+            #user-info-uri: ${params.oauth2.issuerUri}/userinfo
+      resourceserver:
+        jwt:
+          issuer-uri: ${params.oauth2.issuerUri}
+
+  zipkin:
+    base-url: ${params.zipkin.uri}
+  sleuth:
+    sampler:
+      probability: 1.0
+
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+#    org.springframework.web: DEBUG

@@ -1,0 +1,17 @@
+
+params:
+  oauth2:
+    issuerUri: http://localhost:8764
+    client1:
+      clientId: client1
+      clientSecret: secret1
+      scope: read write
+    client2:
+      clientId: client2
+      clientSecret: secret2
+      scope: read
+    
+  zipkin:
+    uri: htt://localhost:9411
+  gateway:
+    uri: http://localhost:7766

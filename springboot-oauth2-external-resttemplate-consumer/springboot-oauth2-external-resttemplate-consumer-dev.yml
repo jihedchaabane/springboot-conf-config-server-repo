@@ -1,0 +1,17 @@
+
+params:
+  oauth2:
+    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
+    client1:
+      clientId: client1
+      clientSecret: secret1
+      scope: read write
+    client2:
+      clientId: client2
+      clientSecret: secret2
+      scope: read
+    
+  zipkin:
+    uri: htt://container-zipkin:9411
+  gateway:
+    uri: http://container-springboot-conf-gateway-api-oauth2:7766
