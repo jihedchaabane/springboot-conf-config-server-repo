@@ -34,6 +34,8 @@ springdoc:
     path: /swagger-ui.html
     operations-sorter: method
     tags-sorter: alpha
+    # Activer le mode "try it out" pour tous les endpoints
+    try-it-out-enabled: true
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
     
 # http://******:1112/swagger-ui/index.html
