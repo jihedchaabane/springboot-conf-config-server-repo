@@ -5,11 +5,11 @@ params:
     client1:
       clientId: client1
       clientSecret: secret1
-      scope: read write
+      scopes: read write
     client2:
       clientId: client2
       clientSecret: secret2
-      scope: read
+      scopes: read
     
   zipkin:
     uri: http://container-zipkin:9411

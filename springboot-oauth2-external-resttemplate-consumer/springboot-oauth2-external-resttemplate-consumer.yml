@@ -18,11 +18,11 @@ authorization:
   ms1:
     clientId: ${params.oauth2.client1.clientId}
     clientSecret: ${params.oauth2.client1.clientSecret}
-    scope: ${params.oauth2.client1.scope}
+    scope: ${params.oauth2.client1.scopes}
   ms2:
     clientId: ${params.oauth2.client2.clientId}
     clientSecret: ${params.oauth2.client2.clientId}
-    scope: ${params.oauth2.client2.scope}
+    scope: ${params.oauth2.client2.scopes}
 
 
 
