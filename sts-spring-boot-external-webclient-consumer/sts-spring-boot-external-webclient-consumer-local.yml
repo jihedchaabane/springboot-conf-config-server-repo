@@ -7,3 +7,5 @@ params:
     issuerUri: http://localhost:8764
   clients:
     resourceUri: http://localhost:7773
+  zipkin:
+    uri: http://localhost:9411

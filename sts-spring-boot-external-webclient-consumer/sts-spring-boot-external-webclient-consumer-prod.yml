@@ -7,3 +7,5 @@ params:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   clients:
     resourceUri: http://container-sts-spring-boot-resource-server:7773
+  zipkin:
+    uri: http://container-zipkin:9411

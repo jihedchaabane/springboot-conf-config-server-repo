@@ -1,9 +1,6 @@
 
 params:
   oauth2:
-    clientId: client1
-    clientSecret: secret1
-    scope: read
     issuerUri: http://localhost:8764
   zipkin:
     uri: http://localhost:9411
