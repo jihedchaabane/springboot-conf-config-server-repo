@@ -15,3 +15,9 @@ params:
     uri: http://container-zipkin:9411
   gateway:
     uri: http://container-springboot-conf-gateway-api-oauth2:7766
+
+## uri/enabled de gr-conf-swagger-aggregator
+aggregator:
+  eureka.enabled: true
+  cors:
+    uri: http://10.0.0.137:8765

@@ -9,3 +9,9 @@ params:
     resourceUri: http://container-sts-spring-boot-resource-server:7773
   zipkin:
     uri: http://container-zipkin:9411
+
+## uri/enabled de gr-conf-swagger-aggregator
+aggregator:
+  eureka.enabled: true
+  cors:
+    uri: http://10.0.0.500:8765
