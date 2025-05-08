@@ -1,11 +1,5 @@
-#local
-#host.where.docker.ip: localhost
 # dev
-#host.where.docker.ip: 10.0.0.137
-# homol
-#host.where.docker.ip: 10.0.0.500
-# prod
-#host.where.docker.ip: 10.0.0.600
+host.where.docker.ip: 10.0.0.137
 
 eureka:
   client:
