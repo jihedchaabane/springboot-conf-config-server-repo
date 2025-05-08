@@ -9,3 +9,10 @@ params:
     resourceUri: http://localhost:7773
   zipkin:
     uri: http://localhost:9411
+## START SWAGGER
+## uri/enabled de gr-conf-swagger-aggregator
+aggregator:
+  eureka.enabled: true
+  cors:
+    uri: http://localhost:8765
+## END SWAGGER

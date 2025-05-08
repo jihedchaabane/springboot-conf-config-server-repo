@@ -15,3 +15,10 @@ params:
     uri: http://localhost:9411
   gateway:
     uri: http://localhost:7766
+## START SWAGGER
+## uri/enabled de gr-conf-swagger-aggregator
+aggregator:
+  eureka.enabled: true
+  cors:
+    uri: http://localhost:8765
+## END SWAGGER

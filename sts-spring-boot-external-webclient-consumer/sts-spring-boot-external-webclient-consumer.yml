@@ -19,6 +19,37 @@ spring:
     sampler:
       probability: 1.0
 
+
+## Start SWAGGER
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+  show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
+    
+# http://******:1112/swagger-ui/index.html
+app:
+  openapi:
+    local-url: http://localhost:${server.port}
+    dev-url: http://10.0.0.137:${server.port}
+    homol-url: http://10.0.0.500:${server.port}
+    prod-url: https://10.0.0.600:${server.port}
+
+## uri de gr-conf-swagger-aggregator
+swagger:
+  aggregator:
+    cors:
+      uri: ${aggregator.cors.uri}
+
+eureka:
+  instance:
+    metadata-map:
+      # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'' (désactiver le sinon sinon).
+      swagger.aggregator.enabled: ${aggregator.eureka.enabled}
+## Start SWAGGER
 logging:
   level:
     root: INFO
