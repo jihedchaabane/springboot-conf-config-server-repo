@@ -1,3 +1,10 @@
+spring:
+  zipkin:
+    base-url: ${params.zipkin.uri}
+  sleuth:
+    sampler:
+      probability: 1.0
+
 springdoc:
   api-docs:
     path: /v3/api-docs
