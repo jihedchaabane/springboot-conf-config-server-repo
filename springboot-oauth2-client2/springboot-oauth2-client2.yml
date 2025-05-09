@@ -37,8 +37,3 @@ springdoc:
     try-it-out-enabled: true
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
 ## END SWAGGER
-
-#logging:
-#  level:
-#    org.springframework.security: DEBUG
-#    org.springframework.web: DEBUG

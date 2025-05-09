@@ -6,5 +6,6 @@ params:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   zipkin:
     uri: http://container-zipkin:9411
+  # URLs de l'API Gateway pour les appels aux microservices
   gateway:
     uri: http://container-springboot-conf-gateway-api-oauth2:7766

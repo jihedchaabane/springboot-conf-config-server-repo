@@ -1,4 +1,3 @@
-
 spring:
   zipkin:
     base-url: ${params.zipkin.uri}
