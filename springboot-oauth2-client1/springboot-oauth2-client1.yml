@@ -13,7 +13,7 @@ spring:
             token-uri: ${params.oauth2.issuerUri}/oauth2/token
             # Explicitly disable user-info and authorization endpoints (not used in client_credentials)
             authorization-uri: ${params.oauth2.issuerUri}/oauth2/authorize
-            #user-info-uri: http://localhost:8764/userinfo
+            #user-info-uri: ${params.oauth2.issuerUri}/userinfo
       resourceserver:
         jwt:
           issuer-uri: ${params.oauth2.issuerUri}
