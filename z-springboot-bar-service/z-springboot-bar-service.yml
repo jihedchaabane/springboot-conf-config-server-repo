@@ -6,6 +6,13 @@ props:
   property3: bar-default 3
   property6: ${property6}
 
+spring:
+  zipkin:
+    base-url: ${params.zipkin.uri}
+  sleuth:
+    sampler:
+      probability: 1.0
+
 springdoc:
   api-docs:
     path: /v3/api-docs
