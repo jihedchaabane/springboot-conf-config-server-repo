@@ -1,6 +1,9 @@
 
 params:
   oauth2:
+    clientId: products-client
+    clientSecret: secret
+    scopes: products.read,products.write
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   zipkin:
     uri: http://container-zipkin:9411

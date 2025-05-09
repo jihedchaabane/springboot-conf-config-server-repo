@@ -6,7 +6,11 @@ params:
     scopes: products.read
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   clients:
-    resourceUri: http://container-sts-spring-boot-resource-server:7773
+    resourceUri1: http://container-sts-spring-boot-resource-server:7773     # sts-spring-boot-resource-server => client1
+    resourceUri2: http://*****************************************:77733    # client 2
+    resourceUri3: http://*****************************************:777333   # client 3
+    resourceUri4: http://*****************************************:7773333  # client 4
+    resourceUri5: http://*****************************************:77733333 # client 5 ...
   zipkin:
     uri: http://container-zipkin:9411
 

@@ -1,6 +1,9 @@
 
 params:
   oauth2:
+    clientId: products-client
+    clientSecret: secret
+    scopes: products.read,products.write
     issuerUri: http://localhost:8764
   zipkin:
     uri: http://localhost:9411
