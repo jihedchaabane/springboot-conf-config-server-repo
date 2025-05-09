@@ -3,7 +3,7 @@ params:
   oauth2:
     clientId: products-client
     clientSecret: secret
-    scope: products.read
+    scopes: products.read
     issuerUri: http://localhost:8764
   clients:
     resourceUri: http://localhost:7773

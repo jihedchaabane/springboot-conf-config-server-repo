@@ -9,7 +9,7 @@ spring:
             client-secret: ${params.oauth2.clientSecret}
             authorization-grant-type: client_credentials
             client-name: products-client-client-credentials
-            scope: ${params.oauth2.scope}
+            scope: ${params.oauth2.scopes}
         provider:
           spring:
             issuer-uri: ${params.oauth2.issuerUri}

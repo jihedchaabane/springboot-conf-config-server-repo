@@ -3,7 +3,7 @@ params:
   oauth2:
     clientId: products-client
     clientSecret: secret
-    scope: products.read
+    scopes: products.read
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   clients:
     resourceUri: http://container-sts-spring-boot-resource-server:7773
