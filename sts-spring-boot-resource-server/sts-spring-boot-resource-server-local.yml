@@ -4,6 +4,7 @@ params:
     clientId: products-client
     clientSecret: secret
     scopes: products.read,products.write
+
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

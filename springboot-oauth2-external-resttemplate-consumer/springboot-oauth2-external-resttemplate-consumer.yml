@@ -5,7 +5,7 @@ spring:
     sampler:
       probability: 1.0
 
-# Configuration pour les appels à l'Authorization Server
+# Configuration pour les appels à l'Authorization Server et aux différents client oauth2.
 authorization:
   server:
     url: ${params.oauth2.issuerUri}/oauth2/token
