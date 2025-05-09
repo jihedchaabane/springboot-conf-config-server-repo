@@ -14,7 +14,7 @@ spring:
       idle-timeout: 300000
       max-lifetime: 1800000
       connection-timeout: 30000
-      pool-name: HikariPool-STS_AUTH_SERVER_DB
+      pool-name: HikariPool_STS_AUTH_SERVER_DB
       auto-commit: true
       data-source-properties:
         cachePrepStmts: true

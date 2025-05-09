@@ -6,7 +6,6 @@
 #  api-docs:
 #    enabled: true
 
-
 #springdoc:
 #  swagger-ui:
 #    path: /swagger-ui.html
@@ -15,6 +14,7 @@
 #  api-docs:
 #    path: /v3/api-docs
 #    enabled: true
+
 
 springdoc:
   swagger-ui:
@@ -27,8 +27,3 @@ springdoc:
   api-docs:
     path: /v3/api-docs
     enabled: true
-
-eureka:
-  client:
-    # Rafraîchir le registre toutes les X secondes
-    registry-fetch-interval-seconds: ${eureka.fetch.seconds}

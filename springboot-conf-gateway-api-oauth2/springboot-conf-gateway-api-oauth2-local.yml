@@ -1,6 +1,0 @@
-
-params:
-  oauth2:
-    issuerUri: http://localhost:8764
-  zipkin:
-    uri: http://localhost:9411

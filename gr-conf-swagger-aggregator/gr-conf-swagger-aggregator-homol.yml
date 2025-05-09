@@ -1,1 +1,1 @@
-eureka.fetch.seconds: 60
+eureka.fetch.seconds: 120

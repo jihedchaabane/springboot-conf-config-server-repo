@@ -1,2 +1,10 @@
 # prod
 host.where.docker.ip: 10.0.0.600
+
+params:
+  oauth2:
+    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
+  zipkin:
+    uri: http://container-zipkin:9411
+  gateway:
+    uri: http://container-springboot-conf-gateway-api-oauth2:7766

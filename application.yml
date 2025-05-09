@@ -1,12 +1,3 @@
-#local
-#host.where.docker.ip: localhost
-# dev
-#host.where.docker.ip: 10.0.0.137
-# homol
-#host.where.docker.ip: 10.0.0.500
-# prod
-#host.where.docker.ip: 10.0.0.600
-
 eureka:
   client:
     service-url:
@@ -14,10 +5,17 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 ## 'gr-conf-swagger-aggregator' Cors issues fix..
+    # Rafraîchir le registre toutes les X secondes
+    registry-fetch-interval-seconds: ${eureka.fetch.seconds:60}
   instance:
     preferIpAddress: true
     ipAddress: ${host.where.docker.ip}
     hostname: ${spring.application.name}
+    metadata-map:
+      # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
+      # ==> (désactivé par défaut sinon).
+      swagger.aggregator.enabled: ${aggregator.eureka.enabled:false}
+
 
 management:
   endpoints:
@@ -30,3 +28,20 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
+## START : uri de gr-conf-swagger-aggregator
+swagger:
+  aggregator:
+    cors:
+      uri: ${aggregator.cors.uri:AGGREGATOR_URI_NOT_PROVIDED_OR_UNUSFULL}
+aggregator:
+  cors:
+    uri: http://${host.where.docker.ip}:8765
+## END : uri/enabled de gr-conf-swagger-aggregator
+
+app:
+  openapi:
+    local-url: http://localhost:${server.port}
+    dev-url: http://10.0.0.137:${server.port}
+    homol-url: http://10.0.0.500:${server.port}
+    prod-url: https://10.0.0.600:${server.port}

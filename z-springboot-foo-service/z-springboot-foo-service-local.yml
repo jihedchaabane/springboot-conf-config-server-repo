@@ -8,5 +8,3 @@ foo:
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
-  cors:
-    uri: http://localhost:8765

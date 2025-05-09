@@ -1,7 +1,6 @@
 
 params:
   oauth2:
-    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
     client1:
       clientId: client1
       clientSecret: secret1
@@ -10,14 +9,7 @@ params:
       clientId: client2
       clientSecret: secret2
       scopes: read
-    
-  zipkin:
-    uri: http://container-zipkin:9411
-  gateway:
-    uri: http://container-springboot-conf-gateway-api-oauth2:7766
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
-  cors:
-    uri: http://10.0.0.600:8765

@@ -8,5 +8,3 @@ hello:
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
-  cors:
-    uri: http://10.0.0.600:8765

@@ -4,20 +4,12 @@ params:
     clientId: products-client
     clientSecret: secret
     scopes: products.read
-    issuerUri: http://localhost:8764
   clients:
     resourceUri1: http://localhost:7773		# sts-spring-boot-resource-server => client1
     resourceUri2: http://localhost:77733    # client 2
     resourceUri3: http://localhost:777333   # client 3
     resourceUri4: http://localhost:7773333  # client 4
     resourceUri5: http://localhost:77733333 # client 5 ...
-
-  zipkin:
-    uri: http://localhost:9411
-## START SWAGGER
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true
-  cors:
-    uri: http://localhost:8765
-## END SWAGGER
