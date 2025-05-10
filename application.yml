@@ -30,25 +30,6 @@ management:
       show-details: ALWAYS
 
 ## START : uri de gr-conf-swagger-aggregator
-swagger:
-  aggregator:
-    cors:
-      uri: ${aggregator.cors.uri:AGGREGATOR_URI_NOT_PROVIDED_OR_UNUSFULL}
-aggregator:
-  cors:
-    uri: http://${host.where.docker.ip}:8765
-## END : uri/enabled de gr-conf-swagger-aggregator
-
-app:
-  openapi:
-    local-url: http://localhost:${server.port}
-    dev-url: http://10.0.0.137:${server.port}
-    homol-url: http://10.0.0.500:${server.port}
-    prod-url: https://10.0.0.600:${server.port}
-
-
-
-## START : uri de gr-conf-swagger-aggregator
 swagger-params:
   issuerUri: ${params.oauth2.issuerUri}
   servers:
@@ -64,4 +45,4 @@ swagger-params:
   aggregator:
     enabled: ${aggregator.eureka.enabled}
     cors:
-      uri: ${aggregator.cors.uri:AGGREGATOR_URI_NOT_PROVIDED_OR_UNUSFULL}
+      uri: http://${host.where.docker.ip}:8765
