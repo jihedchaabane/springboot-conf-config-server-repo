@@ -45,3 +45,23 @@ app:
     dev-url: http://10.0.0.137:${server.port}
     homol-url: http://10.0.0.500:${server.port}
     prod-url: https://10.0.0.600:${server.port}
+
+
+
+## START : uri de gr-conf-swagger-aggregator
+swagger-params:
+  issuerUri: ${params.oauth2.issuerUri}
+  servers:
+    liste:
+      - uri: http://localhost:${server.port}
+        description: Local environment
+      - uri: http://10.0.0.137:${server.port}
+        description: Development environment
+      - uri: http://10.0.0.500:${server.port}
+        description: Homologation environment
+      - uri: http://10.0.0.500:${server.port}
+        description: Production environment
+  aggregator:
+    enabled: ${aggregator.eureka.enabled}
+    cors:
+      uri: ${aggregator.cors.uri:AGGREGATOR_URI_NOT_PROVIDED_OR_UNUSFULL}
