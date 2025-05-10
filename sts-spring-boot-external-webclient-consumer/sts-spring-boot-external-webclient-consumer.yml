@@ -5,11 +5,11 @@ spring:
         registration:
           products-client-client-credentials:
             provider: spring
-            client-id: ${params.oauth2.clientId}
-            client-secret: ${params.oauth2.clientSecret}
+            client-id: ${caller.secured.client1.clientId}
+            client-secret: ${caller.secured.client1.clientSecret}
+            scope: ${caller.secured.client1.scopes}
             authorization-grant-type: client_credentials
             client-name: products-client-client-credentials
-            scope: ${params.oauth2.scopes}
         provider:
           spring:
             issuer-uri: ${params.oauth2.issuerUri}
@@ -18,7 +18,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-
 
 ## START SWAGGER
 springdoc:

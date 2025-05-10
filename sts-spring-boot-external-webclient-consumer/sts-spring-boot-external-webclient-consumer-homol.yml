@@ -1,14 +1,26 @@
-params:
-  oauth2:
-    clientId: products-client
-    clientSecret: secret
-    scopes: products.read
-  clients:
-    resourceUri1: http://container-sts-spring-boot-resource-server:7773     # sts-spring-boot-resource-server => client1
-    resourceUri2: http://*****************************************:77733    # client 2
-    resourceUri3: http://*****************************************:777333   # client 3
-    resourceUri4: http://*****************************************:7773333  # client 4
-    resourceUri5: http://*****************************************:77733333 # client 5 ...
+caller:
+  secured:
+    client1:
+      resourceName: products-resource-server
+      resourceUri: http://container-sts-spring-boot-resource-server:7773     # sts-spring-boot-resource-server => client1
+      registrationId: products-client-client-credentials
+      clientId: products-client
+      clientSecret: secret
+      scopes: products.read
+    client2:
+      resourceName: client2-resource-server
+      resourceUri: http://*****************************************:port    # client 2
+      registrationId: the_registrationId
+      clientId: the_client_id
+      clientSecret: the_secret
+      scopes: the_scope
+    client3:
+      resourceName: client3-resource-server
+      resourceUri: http://*****************************************:port    # client 3
+      registrationId: the_registrationId
+      clientId: the_client_id
+      clientSecret: the_secret
+      scopes: the_scope
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
