@@ -4,11 +4,11 @@ params:
     client1:
       clientId: client1
       clientSecret: secret1
-      scopes: read write
+      scopes: client1.read client1.write
     client2:
       clientId: client2
       clientSecret: secret2
-      scopes: read
+      scopes: client2.read client2.write
     
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
