@@ -1,3 +1,13 @@
+caller:
+  destination:
+    # gr-springboot-swagger-openapi-squeleton from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

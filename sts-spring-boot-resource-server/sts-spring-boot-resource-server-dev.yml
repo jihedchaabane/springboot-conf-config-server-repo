@@ -2,11 +2,11 @@ caller:
   destination:
     # sts-spring-boot-resource-server from swagger.
     client0:
-      resourceUri: http://container-sts-spring-boot-resource-server:7773
+      resourceUri:
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write
-      registrationId: sts-spring-boot-resource-server-registration
+      registrationId: sts-default-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:

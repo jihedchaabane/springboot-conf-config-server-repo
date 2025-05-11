@@ -5,6 +5,16 @@ foo:
     fooprop2: foo-dev 2
     fooprop3: foo-dev 3
 
+caller:
+  destination:
+    # z-springboot-foo-service from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

@@ -6,6 +6,16 @@ props:
   property3: bar-local 3..
   property5: ${property5}
 
+caller:
+  destination:
+    # z-springboot-bar-service from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

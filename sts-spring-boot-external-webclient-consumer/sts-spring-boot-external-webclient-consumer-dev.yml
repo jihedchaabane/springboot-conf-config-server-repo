@@ -1,21 +1,27 @@
 caller:
   destination:
-    # sts-spring-boot-resource-server
+    # sts-spring-boot-external-webclient-consumer from swagger.
     client0:
+      resourceUri:
+      clientId: products-client
+      clientSecret: secret
+      scopes: products.read,products.write,client1.read,client1.write,client2.read,client2.write
+      registrationId: sts-default-registration
+    # springboot-oauth2-client1
+    client1:
       resourceUri: http://container-sts-spring-boot-resource-server:7773
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write
       registrationId: sts-spring-boot-resource-server-registration
-    # springboot-oauth2-client1
-    client1:
+    client2:
       resourceUri: http://container-springboot-oauth2-client1:8081
       clientId: client1
       clientSecret: secret1
       scopes: client1.read,client1.write,client2.read,client2.write
       registrationId: sts-oauth2-client1-resource-server-registration
     # springboot-oauth2-client2
-    client2:
+    client3:
       resourceUri: http://container-springboot-oauth2-client2:8082
       clientId: client2
       clientSecret: secret2

@@ -5,6 +5,16 @@ hello:
     helloprop2: hello-local 2
     helloprop3: hello-local 3
 
+caller:
+  destination:
+    # z-springboot-hello-world-service from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
   eureka.enabled: true

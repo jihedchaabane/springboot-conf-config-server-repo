@@ -2,11 +2,11 @@ caller:
   destination:
     # springboot-oauth2-client1 from swagger.
     client0:
-      resourceUri: http://container-springboot-oauth2-client1:8081
+      resourceUri:
       clientId: client1
       clientSecret: secret1
-      scopes: client1.read,client1.write
-      registrationId: sts-oauth2-client1-resource-server-registration
+      scopes: client1.read,client1.write,client2.read,client2.write
+      registrationId: sts-default-registration
     client1:
       resourceUri: http://container-springboot-oauth2-client2:8082
       clientId: client2
