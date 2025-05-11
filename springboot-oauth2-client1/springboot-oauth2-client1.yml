@@ -3,12 +3,12 @@ spring:
     oauth2:
       client:
         registration:
-          sts-oauth2-client1-resource-server-registration:
+          sts-oauth2-client2-resource-server-registration:
             provider: sts-provider
-            client-id: ${caller.destination.client0.clientId}
-            client-secret: ${caller.destination.client0.clientSecret}
-            scope: ${caller.destination.client0.scopes}
-            client-name: ${caller.destination.client0.registrationId}
+            client-id: ${caller.destination.client1.clientId}
+            client-secret: ${caller.destination.client1.clientSecret}
+            scope: ${caller.destination.client1.scopes}
+            client-name: ${caller.destination.client1.registrationId}
             authorization-grant-type: client_credentials
         provider:
           sts-provider:

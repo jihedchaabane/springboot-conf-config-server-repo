@@ -6,7 +6,7 @@ caller:
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write,client1.read,client1.write,client2.read,client2.write
-      registrationId:
+      registrationId: sts-default-registration
     # springboot-oauth2-client1
     client1:
       resourceUri: http://localhost:7773
