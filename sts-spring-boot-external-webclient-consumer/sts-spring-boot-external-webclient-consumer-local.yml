@@ -5,25 +5,25 @@ caller:
       resourceUri: http://localhost:7773
       clientId: products-client
       clientSecret: secret
-      scopes: products.read,products.write                   # => [products.read,products.write]
+      scopes: products.read,products.write
       registrationId: sts-spring-boot-resource-server-read-write
     client00:
       resourceUri: http://localhost:7773
       clientId: products-client
       clientSecret: secret
-      scopes: products.read                                  # => [products.read]
+      scopes: products.read
       registrationId: sts-spring-boot-resource-server-read
     client01:
       resourceUri: http://localhost:7773
       clientId: products-client
       clientSecret: secret
-      scopes: products.write                                  # => [products.write]
-      registrationId: oauth2-products-resource-server-write
+      scopes: products.write
+      registrationId: sts-spring-boot-resource-server-write
     client02:
       resourceUri: http://localhost:7773
       clientId: products-client
       clientSecret: secret
-      scopes:                                                 # => [none]
+      scopes:
       registrationId: sts-spring-boot-resource-server-none
     
     # springboot-oauth2-client1
@@ -31,7 +31,7 @@ caller:
       resourceUri: http://localhost:8081
       clientId: client1
       clientSecret: secret1
-      scopes: read,write                                     # => [read,write]
+      scopes: read,write
       registrationId: oauth2-client1-resource-server
 
     # springboot-oauth2-client2
@@ -39,7 +39,7 @@ caller:
       resourceUri: http://localhost:8082
       clientId: client2
       clientSecret: secret2
-      scopes: read,write                                     # => [read,write]
+      scopes: read,write
       registrationId: oauth2-client2-resource-server
 
     # client-3
@@ -47,7 +47,7 @@ caller:
       resourceUri: http://**************************:port
       clientId: the_client_id
       clientSecret: the_secret
-      scopes: the_scopes                                     # => [the_scopes]
+      scopes: the_scopes
       registrationId: oauth2-client3-resource-server
 
 ## uri/enabled de gr-conf-swagger-aggregator
