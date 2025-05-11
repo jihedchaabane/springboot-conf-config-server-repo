@@ -1,5 +1,12 @@
 caller:
   secured:
+    client0:
+      resourceName: oauth2-products-resource-server
+      resourceUri: http://localhost:7773                     # sts-spring-boot-resource-server => client1
+      registrationId: oauth2-products-resource-server-client-credentials
+      clientId: products-client
+      clientSecret: secret
+      scopes: products.read,products.write
     client1:
       resourceName: oauth2-client1-resource-server
       resourceUri: http://localhost:8081                     # springboot-oauth2-client1 => client1
