@@ -1,5 +1,5 @@
 caller:
-  secured:
+  destination:
     # sts-spring-boot-resource-server
     client0:
       resourceUri: http://localhost:7773
