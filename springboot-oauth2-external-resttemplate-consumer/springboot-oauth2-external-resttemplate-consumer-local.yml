@@ -6,14 +6,14 @@ caller:
       clientId: client1
       clientSecret: secret1
       scopes: client1.read,client1.write,client2.read,client2.write
-      registrationId: sts-oauth2-client1-resource-server-read-write
+      registrationId: sts-oauth2-client1-resource-server-registration
     # springboot-oauth2-client2.
     client1:
       resourceUri: ${params.gatewayOauth2.uri}
       clientId: client2
       clientSecret: secret2
       scopes: client2.read,client2.write
-      registrationId: sts-oauth2-client2-resource-server-read-write
+      registrationId: sts-oauth2-client2-resource-server-registration
     
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:

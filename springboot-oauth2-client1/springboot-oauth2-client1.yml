@@ -3,15 +3,15 @@ spring:
     oauth2:
       client:
         registration:
-          sts-oauth2-client2-resource-server-read-write:
-            provider: provider-client2-resource-server
+          sts-oauth2-client2-resource-server-registration:
+            provider: sts-provider
             client-id: ${caller.destination.client1.clientId}
             client-secret: ${caller.destination.client1.clientSecret}
             scope: ${caller.destination.client1.scopes}
             client-name: ${caller.destination.client1.registrationId}
             authorization-grant-type: client_credentials
         provider:
-          provider-client2-resource-server:
+          sts-provider:
             token-uri: ${params.oauth2.issuerUri}/oauth2/token
             # Explicitly disable user-info and authorization endpoints (not used in client_credentials)
             authorization-uri: ${params.oauth2.issuerUri}/oauth2/authorize

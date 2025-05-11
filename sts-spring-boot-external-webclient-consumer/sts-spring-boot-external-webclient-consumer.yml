@@ -3,59 +3,29 @@ spring:
     oauth2:
       client:
         registration:
-          sts-spring-boot-resource-server-read-write:
-            provider: spring
+          sts-spring-boot-resource-server-registration:
+            provider: sts-provider
             client-id: ${caller.destination.client0.clientId}
             client-secret: ${caller.destination.client0.clientSecret}
             scope: ${caller.destination.client0.scopes}
             client-name: ${caller.destination.client0.registrationId}
             authorization-grant-type: client_credentials
-          sts-spring-boot-resource-server-read:
-            provider: spring
-            client-id: ${caller.destination.client00.clientId}
-            client-secret: ${caller.destination.client00.clientSecret}
-            scope: ${caller.destination.client00.scopes}
-            client-name: ${caller.destination.client00.registrationId}
-            authorization-grant-type: client_credentials
-          sts-spring-boot-resource-server-write:
-            provider: spring
-            client-id: ${caller.destination.client01.clientId}
-            client-secret: ${caller.destination.client01.clientSecret}
-            scope: ${caller.destination.client01.scopes}
-            client-name: ${caller.destination.client01.registrationId}
-            authorization-grant-type: client_credentials
-          sts-spring-boot-resource-server-none:
-            provider: spring
-            client-id: ${caller.destination.client02.clientId}
-            client-secret: ${caller.destination.client02.clientSecret}
-            scope: ${caller.destination.client02.scopes}
-            client-name: ${caller.destination.client02.registrationId}
-            authorization-grant-type: client_credentials
-
-
-          oauth2-client1-resource-server:
-            provider: spring
+          sts-oauth2-client1-resource-server-registration:
+            provider: sts-provider
             client-id: ${caller.destination.client1.clientId}
             client-secret: ${caller.destination.client1.clientSecret}
             scope: ${caller.destination.client1.scopes}
             client-name: ${caller.destination.client1.registrationId}
             authorization-grant-type: client_credentials
-          oauth2-client2-resource-server:
-            provider: spring
+          sts-oauth2-client2-resource-server-registration:
+            provider: sts-provider
             client-id: ${caller.destination.client2.clientId}
             client-secret: ${caller.destination.client2.clientSecret}
             scope: ${caller.destination.client2.scopes}
             client-name: ${caller.destination.client2.registrationId}
             authorization-grant-type: client_credentials
-          oauth2-client3-resource-server:
-            provider: spring
-            client-id: ${caller.destination.client3.clientId}
-            client-secret: ${caller.destination.client3.clientSecret}
-            scope: ${caller.destination.client3.scopes}
-            client-name: ${caller.destination.client3.registrationId}
-            authorization-grant-type: client_credentials
         provider:
-          spring:
+          sts-provider:
             issuer-uri: ${params.oauth2.issuerUri}
   zipkin:
     base-url: ${params.zipkin.uri}

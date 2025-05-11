@@ -6,7 +6,7 @@ caller:
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write
-      registrationId: sts-spring-boot-resource-server-read-write
+      registrationId: sts-spring-boot-resource-server-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:

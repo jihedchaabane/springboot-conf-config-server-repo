@@ -6,49 +6,21 @@ caller:
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write
-      registrationId: sts-spring-boot-resource-server-read-write
-    client00:
-      resourceUri: http://localhost:7773
-      clientId: products-client
-      clientSecret: secret
-      scopes: products.read
-      registrationId: sts-spring-boot-resource-server-read
-    client01:
-      resourceUri: http://localhost:7773
-      clientId: products-client
-      clientSecret: secret
-      scopes: products.write
-      registrationId: sts-spring-boot-resource-server-write
-    client02:
-      resourceUri: http://localhost:7773
-      clientId: products-client
-      clientSecret: secret
-      scopes:
-      registrationId: sts-spring-boot-resource-server-none
-    
+      registrationId: sts-spring-boot-resource-server-registration
     # springboot-oauth2-client1
     client1:
       resourceUri: http://localhost:8081
       clientId: client1
       clientSecret: secret1
-      scopes: read,write
-      registrationId: oauth2-client1-resource-server
-
+      scopes: client1.read,client1.write,client2.read,client2.write
+      registrationId: sts-oauth2-client1-resource-server-registration
     # springboot-oauth2-client2
     client2:
       resourceUri: http://localhost:8082
       clientId: client2
       clientSecret: secret2
-      scopes: read,write
-      registrationId: oauth2-client2-resource-server
-
-    # client-3
-    client3:
-      resourceUri: http://**************************:port
-      clientId: the_client_id
-      clientSecret: the_secret
-      scopes: the_scopes
-      registrationId: oauth2-client3-resource-server
+      scopes: client2.read,client2.write
+      registrationId: sts-oauth2-client2-resource-server-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:
