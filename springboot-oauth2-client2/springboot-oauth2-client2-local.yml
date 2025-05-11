@@ -2,7 +2,7 @@ caller:
   destination:
     # springboot-oauth2-client2 from swagger.
     client0:
-      resourceUri: http://localhost:8082
+      resourceUri:
       clientId: client2
       clientSecret: secret2
       scopes: client2.read,client2.write
