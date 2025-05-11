@@ -3,13 +3,34 @@ spring:
     oauth2:
       client:
         registration:
-          products-client-client-credentials:
+          oauth2-products-resource-server-client-credentials:
+            provider: spring
+            client-id: ${caller.secured.client0.clientId}
+            client-secret: ${caller.secured.client0.clientSecret}
+            scope: ${caller.secured.client0.scopes}
+            authorization-grant-type: client_credentials
+            client-name: oauth2-products-resource-server-client-credentials
+          oauth2-client1-resource-server-client-credentials:
             provider: spring
             client-id: ${caller.secured.client1.clientId}
             client-secret: ${caller.secured.client1.clientSecret}
             scope: ${caller.secured.client1.scopes}
             authorization-grant-type: client_credentials
-            client-name: products-client-client-credentials
+            client-name: oauth2-client1-resource-server-client-credentials
+          oauth2-client2-resource-server-client-credentials:
+            provider: spring
+            client-id: ${caller.secured.client2.clientId}
+            client-secret: ${caller.secured.client2.clientSecret}
+            scope: ${caller.secured.client2.scopes}
+            authorization-grant-type: client_credentials
+            client-name: oauth2-client2-resource-server-client-credentials
+          oauth2-client3-resource-server-client-credentials:
+            provider: spring
+            client-id: ${caller.secured.client3.clientId}
+            client-secret: ${caller.secured.client3.clientSecret}
+            scope: ${caller.secured.client3.scopes}
+            authorization-grant-type: client_credentials
+            client-name: oauth2-client3-resource-server-client-credentials
         provider:
           spring:
             issuer-uri: ${params.oauth2.issuerUri}

@@ -1,23 +1,23 @@
 caller:
   secured:
     client1:
-      resourceName: products-resource-server
-      resourceUri: http://localhost:7773                     # sts-spring-boot-resource-server => client1
-      registrationId: products-client-client-credentials
-      clientId: products-client
-      clientSecret: secret
-      scopes: products.read,products.write
+      resourceName: oauth2-client1-resource-server
+      resourceUri: http://localhost:8081                     # springboot-oauth2-client1 => client1
+      registrationId: oauth2-client1-resource-server-client-credentials
+      clientId: client1
+      clientSecret: secret1
+      scopes: read,write
     client2:
-      resourceName: client2-resource-server
-      resourceUri: http://**************************:port    # client 2
-      registrationId: the_registrationId
-      clientId: the_client_id
-      clientSecret: the_secret
-      scopes: the_scope
+      resourceName: oauth2-client2-resource-server
+      resourceUri: http://localhost:8082                     # springboot-oauth2-client2 => client 2
+      registrationId: oauth2-client2-resource-server-client-credentials
+      clientId: client2
+      clientSecret: secret2
+      scopes: read,write
     client3:
-      resourceName: client3-resource-server
+      resourceName: oauth2-client3-resource-server
       resourceUri: http://**************************:port    # client 3
-      registrationId: the_registrationId
+      registrationId: oauth2-client3-resource-server-client-credentials
       clientId: the_client_id
       clientSecret: the_secret
       scopes: the_scope
