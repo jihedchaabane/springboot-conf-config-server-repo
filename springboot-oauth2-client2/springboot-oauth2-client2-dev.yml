@@ -1,9 +1,12 @@
-
-params:
-  oauth2:
-    clientId: client2
-    clientSecret: secret2
-    scopes: read
+caller:
+  destination:
+    # springboot-oauth2-client2 from swagger.
+    client0:
+      resourceUri: http://container-springboot-oauth2-client2:8082
+      clientId: client2
+      clientSecret: secret2
+      scopes: client2.read,client2.write
+      registrationId: sts-oauth2-client2-resource-server-read-write
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator:

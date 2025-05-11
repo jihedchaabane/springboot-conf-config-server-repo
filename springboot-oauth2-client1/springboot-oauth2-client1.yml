@@ -3,13 +3,15 @@ spring:
     oauth2:
       client:
         registration:
-          client1:
-            client-id: ${params.oauth2.clientId}
-            client-secret: ${params.oauth2.clientSecret}
+          sts-oauth2-client2-resource-server-read-write:
+            provider: provider-client2-resource-server
+            client-id: ${caller.destination.client1.clientId}
+            client-secret: ${caller.destination.client1.clientSecret}
+            scope: ${caller.destination.client1.scopes}
+            client-name: ${caller.destination.client1.registrationId}
             authorization-grant-type: client_credentials
-            scope: ${params.oauth2.scopes}
         provider:
-          client1:
+          provider-client2-resource-server:
             token-uri: ${params.oauth2.issuerUri}/oauth2/token
             # Explicitly disable user-info and authorization endpoints (not used in client_credentials)
             authorization-uri: ${params.oauth2.issuerUri}/oauth2/authorize
@@ -36,9 +38,3 @@ springdoc:
     try-it-out-enabled: true
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
 ## END SWAGGER
-
-
-#logging:
-#  level:
-#    org.springframework.security: DEBUG
-#    org.springframework.web: DEBUG
