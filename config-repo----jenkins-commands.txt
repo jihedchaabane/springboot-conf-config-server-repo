@@ -11,12 +11,19 @@ cd /var/lib/jenkins/workspace/springboot-conf-config-server-repo
 sudo rm -rf *
 
 sudo git clone https://github.com/jihedchaabane/springboot-conf-config-server-repo.git
+
 sudo mv springboot-conf-config-server-repo/* ../springboot-conf-config-server-repo/
+
 sudo rm -rf springboot-conf-config-server-repo
 
 --------------------------------------------------------
 sudo git status
-sudo git add .
-sudo git commit -m ".."
 
+sudo git add .
+
+sudo git commit -m ".."
+--------------------------------------------------------
+fatal : propriétaire douteux détecté dans le dépôt à '/var/lib/jenkins/workspace/springboot-conf-config-server-repo'
+Pour ajouter une exception pour ce dépôt, lancez :
+	sudo git config --global --add safe.directory /var/lib/jenkins/workspace/springboot-conf-config-server-repo
 

@@ -5,7 +5,3 @@ database:
   name: postgres_data_source
   username: postgres_data_source
   password: postgres_data_source
-
-params:
-  oauth2:
-    issuerUri: http://localhost:8764
