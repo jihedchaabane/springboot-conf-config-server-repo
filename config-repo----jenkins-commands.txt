@@ -5,7 +5,7 @@ sudo git init
 sudo branch -M main
 --------------------------------------------------------
 
-# repo git local dans jenkins pour le ConfigServer : [au lieu du repo git]
+# repo git local dans jenkins pour le ConfigServer :
 cd /var/lib/jenkins/workspace/springboot-conf-config-server-repo
 
 sudo rm -rf *
@@ -14,15 +14,6 @@ sudo git clone https://github.com/jihedchaabane/springboot-conf-config-server-re
 sudo mv springboot-conf-config-server-repo/* ../springboot-conf-config-server-repo/
 sudo rm -rf springboot-conf-config-server-repo
 
-sudo vim application.yml
-#local
-#host.where.docker.ip: localhost
-# dev
-host.where.docker.ip: 10.0.0.137
-# homol
-#host.where.docker.ip: 10.0.0.500
-# prod
-#host.where.docker.ip: 10.0.0.600
 --------------------------------------------------------
 sudo git status
 sudo git add .
