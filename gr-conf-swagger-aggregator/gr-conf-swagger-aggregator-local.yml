@@ -1,1 +1,2 @@
 eureka.fetch.seconds: 30
+aggregator.eureka.enabled: true
