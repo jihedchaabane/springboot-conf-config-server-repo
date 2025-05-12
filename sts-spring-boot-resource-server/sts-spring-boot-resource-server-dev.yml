@@ -9,5 +9,4 @@ caller:
       registrationId: sts-default-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
-aggregator:
-  eureka.enabled: true
+aggregator.eureka.enabled: true

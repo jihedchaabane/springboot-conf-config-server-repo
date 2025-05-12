@@ -2,6 +2,8 @@
 host.where.docker.ip: 10.0.0.137
 
 params:
+  eureka:
+    uri: http://container-springboot-conf-eureka-server:8761/eureka/
   oauth2:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   gateway:

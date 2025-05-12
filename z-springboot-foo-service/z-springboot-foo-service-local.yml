@@ -14,7 +14,12 @@ caller:
       clientSecret:
       scopes:
       registrationId:
+    client1:
+      resourceUri: http://z-springboot-bar-service
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-bar-service-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
-aggregator:
-  eureka.enabled: true
+aggregator.eureka.enabled: true
