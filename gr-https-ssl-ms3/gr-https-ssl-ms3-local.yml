@@ -10,7 +10,7 @@ server:
 
 caller:
   destination:
-    # gr-https-ssl-ms4 from swagger.
+    # gr-https-ssl-ms3 from swagger.
     client0:
       resourceUri:
       clientId:
