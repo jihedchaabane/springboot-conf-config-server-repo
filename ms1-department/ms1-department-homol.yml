@@ -1,0 +1,17 @@
+aggregator.eureka.enabled: true
+      
+caller:
+  destination:
+    # ms2-department from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+    client1:
+      resourceUri: http://MS2-STUDENT 
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms2-student-registration

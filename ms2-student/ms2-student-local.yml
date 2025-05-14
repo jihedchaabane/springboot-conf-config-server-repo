@@ -1,0 +1,11 @@
+aggregator.eureka.enabled: true
+
+caller:
+  destination:
+    # ms2-student from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
