@@ -10,7 +10,7 @@ caller:
       scopes:
       registrationId:
     client1:
-      resourceUri: https://gr-https-ssl-ms1
+      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8441 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
@@ -34,7 +34,7 @@ caller:
       scopes:
       registrationId: sts-ms4-service-registration
     client5:
-      resourceUri: http://localhost:1002
+      resourceUri: http://gr-nohttps-ssl-department #http://localhost:1002 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
