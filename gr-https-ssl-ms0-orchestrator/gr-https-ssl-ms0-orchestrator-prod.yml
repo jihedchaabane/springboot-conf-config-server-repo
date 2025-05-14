@@ -1,0 +1,41 @@
+aggregator.eureka.enabled: true
+      
+caller:
+  destination:
+    # gr-https-ssl-ms0-orchestrator from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+    client1:
+      resourceUri: https://localhost:8441
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms1-service-registration
+    client2:
+      resourceUri: https://localhost:8442
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms2-service-registration
+    client3:
+      resourceUri: https://localhost:8443
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms3-service-registration
+    client4:
+      resourceUri: https://localhost:8444
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms4-service-registration
+    client5:
+      resourceUri: http://localhost:1002
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms1-department-service-registration

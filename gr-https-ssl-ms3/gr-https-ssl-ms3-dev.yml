@@ -1,0 +1,19 @@
+aggregator.eureka.enabled: true
+      
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:ms2.p12
+    key-store-password: jihed123
+    key-alias: ms2
+
+caller:
+  destination:
+    # gr-https-ssl-ms4 from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
