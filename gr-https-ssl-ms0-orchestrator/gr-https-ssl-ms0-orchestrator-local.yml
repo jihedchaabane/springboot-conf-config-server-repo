@@ -10,7 +10,7 @@ caller:
       scopes:
       registrationId:
     client1:
-      resourceUri: https://localhost:8441
+      resourceUri: https://gr-https-ssl-ms1
       clientId:
       clientSecret:
       scopes:
