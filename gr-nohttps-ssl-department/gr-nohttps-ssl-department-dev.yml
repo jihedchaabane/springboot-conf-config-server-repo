@@ -10,7 +10,7 @@ caller:
       scopes:
       registrationId:
     client1:
-      resourceUri: http://MS2-STUDENT 
+      resourceUri: http://GR-NOHTTPS-SSL-STUDENT
       clientId:
       clientSecret:
       scopes:
