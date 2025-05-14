@@ -2,7 +2,7 @@ aggregator.eureka.enabled: true
       
 caller:
   destination:
-    # ms2-department from swagger.
+    # gr-nohttps-ssl-department from swagger.
     client0:
       resourceUri:
       clientId:
