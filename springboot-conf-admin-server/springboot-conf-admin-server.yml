@@ -1,14 +1,14 @@
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator.eureka.enabled: false
 
-#server:
-#  ssl:
-#    trust-store: classpath:ms1-truststore.jks
-#    trust-store-password: jihed1234
+server:
+  ssl:
+    trust-store: file:///C:/Users/JIHED/Desktop/eureka_issue/ms1-truststore.jks
+    trust-store-password: jihed1234
 #javax:
 #  net:
 #    ssl:
-#      trustStore: classpath:ms1-truststore.jks
+#      trustStore: file:///C:/Users/JIHED/Desktop/eureka_issue/ms1-truststore.jks
 #      trustStorePassword: jihed1234
 
 spring:
