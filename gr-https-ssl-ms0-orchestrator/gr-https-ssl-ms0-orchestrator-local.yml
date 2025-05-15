@@ -10,37 +10,37 @@ caller:
       scopes:
       registrationId:
     client1:
-      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8441 -> without @LoadBalanced
+      resourceUri: https://GR-HTTPS-SSL-MS1 # https://localhost:8441 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms1-service-registration
     client2:
-      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8442 -> without @LoadBalanced
+      resourceUri: https://GR-HTTPS-SSL-MS2 # https://localhost:8442 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms2-service-registration
     client3:
-      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8443 -> without @LoadBalanced
+      resourceUri: https://GR-HTTPS-SSL-MS3 # https://localhost:8443 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms3-service-registration
     client4:
-      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8444 -> without @LoadBalanced
+      resourceUri: https://GR-HTTPS-SSL-MS4 # https://localhost:8444 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms4-service-registration
     client5:
-      resourceUri: http://gr-nohttps-ssl-department #http://localhost:1002 -> without @LoadBalanced
+      resourceUri: http://GR-NOHTTPS-SSL-DEPARTMENT #http://localhost:1002 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms1-department-service-registration
     client6:
-      resourceUri: http://gr-nohttps-ssl-student #http://localhost:1001 -> without @LoadBalanced
+      resourceUri: http://GR-NOHTTPS-SSL-STUDENT #http://localhost:1001 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
