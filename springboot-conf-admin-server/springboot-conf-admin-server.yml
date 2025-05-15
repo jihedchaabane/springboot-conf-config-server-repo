@@ -1,6 +1,11 @@
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator.eureka.enabled: false
 
+server:
+  ssl:
+    trust-store: classpath:ms1-truststore.jks
+    trust-store-password: jihed1234
+
 spring:
 # java -jar fakesmtp-2.0.jar -p 2525
 # https://threadminions.wordpress.com/2019/06/25/alert-with-spring-boot-admin-server/
