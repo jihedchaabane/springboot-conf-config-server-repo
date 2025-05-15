@@ -16,19 +16,19 @@ caller:
       scopes:
       registrationId: sts-ms1-service-registration
     client2:
-      resourceUri: https://localhost:8442
+      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8442 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms2-service-registration
     client3:
-      resourceUri: https://localhost:8443
+      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8443 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms3-service-registration
     client4:
-      resourceUri: https://localhost:8444
+      resourceUri: https://gr-https-ssl-ms1 # https://localhost:8444 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
@@ -39,3 +39,9 @@ caller:
       clientSecret:
       scopes:
       registrationId: sts-ms1-department-service-registration
+    client6:
+      resourceUri: http://gr-nohttps-ssl-student #http://localhost:1001 -> without @LoadBalanced
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-gr-nohttps-ssl-student-registration
