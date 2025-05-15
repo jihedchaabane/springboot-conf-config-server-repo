@@ -5,11 +5,11 @@ aggregator.eureka.enabled: false
 #  ssl:
 #    trust-store: classpath:ms1-truststore.jks
 #    trust-store-password: jihed1234
-javax:
-  net:
-    ssl:
-      trustStore: classpath:ms1-truststore.jks
-      trustStorePassword: jihed1234
+#javax:
+#  net:
+#    ssl:
+#      trustStore: classpath:ms1-truststore.jks
+#      trustStorePassword: jihed1234
 
 spring:
 # java -jar fakesmtp-2.0.jar -p 2525
