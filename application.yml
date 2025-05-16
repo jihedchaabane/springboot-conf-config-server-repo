@@ -14,7 +14,7 @@ eureka:
     metadata-map:
       # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
       # ==> (désactivé par défaut sinon).
-      swagger.aggregator.enabled: ${aggregator.eureka.enabled}
+      swagger.aggregator.enabled: ${aggregator.eureka.enabled:false}
 
 
 management:
@@ -43,6 +43,6 @@ swagger-params:
       - uri: http://10.0.0.500:${server.port}
         description: Production environment
   aggregator:
-    enabled: ${aggregator.eureka.enabled}
+    enabled: ${aggregator.eureka.enabled:false}
     cors:
       uri: http://${host.where.docker.ip}:8765
