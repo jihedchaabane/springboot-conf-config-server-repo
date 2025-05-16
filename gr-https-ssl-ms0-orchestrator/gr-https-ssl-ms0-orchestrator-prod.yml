@@ -34,12 +34,18 @@ caller:
       scopes:
       registrationId: sts-ms4-service-registration
     client5:
+      resourceUri: https://GR-HTTPS-SSL-MS5 # https://localhost:8445 -> without @LoadBalanced
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-ms5-service-registration
+    client6:
       resourceUri: http://GR-NOHTTPS-SSL-DEPARTMENT #http://localhost:1002 -> without @LoadBalanced
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-ms1-department-service-registration
-    client6:
+    client7:
       resourceUri: http://GR-NOHTTPS-SSL-STUDENT #http://localhost:1001 -> without @LoadBalanced
       clientId:
       clientSecret:
