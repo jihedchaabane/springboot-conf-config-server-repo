@@ -15,4 +15,4 @@ params:
   keystore:
     path: file:C:/E/TOOLS/ms2.p12
     password: jihed123
-    alias: m2
+    alias: ms2
