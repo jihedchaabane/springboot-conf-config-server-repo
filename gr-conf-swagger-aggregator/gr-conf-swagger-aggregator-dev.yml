@@ -1,2 +1,12 @@
+caller:
+  destination:
+    # gr-conf-swagger-aggregator from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+
 eureka.fetch.seconds: 30
 aggregator.eureka.enabled: true
