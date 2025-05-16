@@ -8,7 +8,7 @@ caller:
       scopes: client1.read,client1.write,client2.read,client2.write
       registrationId: sts-default-registration
     client1:
-      resourceUri: http://container-springboot-oauth2-client2:8082
+      resourceUri: http://SPRINGBOOT-OAUTH2-CLIENT2
       clientId: client2
       clientSecret: secret2
       scopes: client2.read,client2.write
