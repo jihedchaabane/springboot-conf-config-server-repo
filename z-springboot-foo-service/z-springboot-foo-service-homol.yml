@@ -15,11 +15,23 @@ caller:
       scopes:
       registrationId:
     client1:
-      resourceUri: http://z-springboot-bar-service
+      resourceUri: http://Z-SPRINGBOOT-BAR-SERVICE
       clientId:
       clientSecret:
       scopes:
       registrationId: sts-bar-service-registration
+    client2:
+      resourceUri: http://Z-SPRINGBOOT-HELLO
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-hello-service-registration
+    client3:
+      resourceUri: http://Z-SPRINGBOOT-HELLO-WORLD-SERVICE
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId: sts-helloworld-service-registration
 
 ## uri/enabled de gr-conf-swagger-aggregator
 aggregator.eureka.enabled: true
