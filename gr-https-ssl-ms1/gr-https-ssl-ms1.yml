@@ -17,6 +17,15 @@ server:
     key-store-password: ${params.keystore.password}
     key-alias: ${params.keystore.alias}
 
+eureka:
+  instance:
+    secure-port: ${server.port}  # Advertise HTTPS port
+    secure-port-enabled: true
+    non-secure-port-enabled: false
+    metadata-map:
+      management.port: ${server.port}
+      management.secure: true
+
 caller:
   destination:
     # gr-https-ssl-ms1 from swagger.
