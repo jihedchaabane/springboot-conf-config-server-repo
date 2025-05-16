@@ -17,3 +17,6 @@ params:
     path: file:C:/E/TOOLS/ms2.p12
     password: jihed123
     alias: ms2
+  truststore:
+    path: C:/E/TOOLS/ms1-truststore.jks
+    password: jihed1234

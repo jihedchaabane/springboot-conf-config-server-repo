@@ -12,3 +12,11 @@ params:
     uri: http://container-springboot-conf-gateway-api-oauth2:7766
   zipkin:
     uri: http://container-zipkin:9411
+  keystore:
+    type: PKCS12
+    path: file:/opt/ms2.p12
+    password: jihed123
+    alias: ms2
+  truststore:
+    path: /opt/ms1-truststore.jks
+    password: jihed1234
