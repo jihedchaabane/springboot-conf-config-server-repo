@@ -8,3 +8,20 @@ springdoc:
     # Activer le mode "try it out" pour tous les endpoints
     try-it-out-enabled: true
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
+
+server:
+  ssl:
+    enabled: true
+    key-store-type: ${params.keystore.type}
+    key-store: ${params.keystore.path}
+    key-store-password: ${params.keystore.password}
+    key-alias: ${params.keystore.alias}
+
+eureka:
+  instance:
+    secure-port: ${server.port}  # Advertise HTTPS port
+    secure-port-enabled: true
+    non-secure-port-enabled: false
+    metadata-map:
+      management.port: ${server.port}
+      management.secure: true

@@ -1,1 +1,11 @@
 aggregator.eureka.enabled: true
+
+caller:
+  destination:
+    # gr-https-ssl-ms1 from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
