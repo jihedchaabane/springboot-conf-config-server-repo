@@ -8,3 +8,21 @@ springdoc:
     # Activer le mode "try it out" pour tous les endpoints
     try-it-out-enabled: true
   show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
+
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: ${params.keystore.path}
+    key-store-password: ${params.keystore.password}
+    key-alias: ${params.keystore.alias}
+
+caller:
+  destination:
+    # gr-https-ssl-ms1 from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:

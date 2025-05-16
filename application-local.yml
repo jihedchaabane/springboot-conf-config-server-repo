@@ -12,3 +12,7 @@ params:
     uri: http://localhost:7766
   zipkin:
     uri: http://localhost:9411
+  keystore:
+    path: file:C:/E/TOOLS/ms2.p12
+    password: jihed123
+    alias: m2
