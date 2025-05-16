@@ -7,7 +7,7 @@ params:
   oauth2:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
   gateway:
-    http://container-springboot-conf-gateway-api:8766
+    uri: http://container-springboot-conf-gateway-api:8766
   gatewayOauth2:
     uri: http://container-springboot-conf-gateway-api-oauth2:7766
   zipkin:
