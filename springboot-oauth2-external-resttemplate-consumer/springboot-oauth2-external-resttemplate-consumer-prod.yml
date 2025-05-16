@@ -1,15 +1,26 @@
-
-params:
-  oauth2:
+caller:
+  destination:
+    # springboot-oauth2-external-resttemplate-consumer from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
+    # springboot-oauth2-client2.
     client1:
+      resourceUri: ${params.gatewayOauth2.uri}
       clientId: client1
       clientSecret: secret1
-      scopes: read write
+      scopes: client1.read,client1.write,client2.read,client2.write
+      registrationId: sts-oauth2-client1-resource-server-registration
+    # springboot-oauth2-client2.
     client2:
+      resourceUri: ${params.gatewayOauth2.uri}
       clientId: client2
       clientSecret: secret2
-      scopes: read
-
+      scopes: client2.read,client2.write
+      registrationId: sts-oauth2-client2-resource-server-registration
+    
 ## uri/enabled de gr-conf-swagger-aggregator
-aggregator:
-  eureka.enabled: true
+aggregator.eureka.enabled: true

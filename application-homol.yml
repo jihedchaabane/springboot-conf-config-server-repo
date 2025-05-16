@@ -2,10 +2,21 @@
 host.where.docker.ip: 10.0.0.500
 
 params:
+  eureka:
+    uri: http://container-springboot-conf-eureka-server:8761/eureka/
   oauth2:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
+  gateway:
+    uri: http://container-springboot-conf-gateway-api:8766
+  gatewayOauth2:
+    uri: http://container-springboot-conf-gateway-api-oauth2:7766
   zipkin:
     uri: http://container-zipkin:9411
-  # URLs de l'API Gateway pour les appels aux microservices
-  gateway:
-    uri: http://container-springboot-conf-gateway-api-oauth2:7766
+  keystore:
+    type: PKCS12
+    path: file:/certificates/ms2.p12
+    password: jihed123
+    alias: ms2
+  truststore:
+    path: /certificates/ms1-truststore.jks
+    password: jihed1234

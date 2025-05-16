@@ -5,19 +5,6 @@ spring:
     sampler:
       probability: 1.0
 
-# Configuration pour les appels à l'Authorization Server et aux différents client oauth2.
-authorization:
-  server:
-    url: ${params.oauth2.issuerUri}/oauth2/token
-  ms1:
-    clientId: ${params.oauth2.client1.clientId}
-    clientSecret: ${params.oauth2.client1.clientSecret}
-    scopes: ${params.oauth2.client1.scopes}
-  ms2:
-    clientId: ${params.oauth2.client2.clientId}
-    clientSecret: ${params.oauth2.client2.clientSecret}
-    scopes: ${params.oauth2.client2.scopes}
-
 ## START SWAGGER
 springdoc:
   api-docs:
