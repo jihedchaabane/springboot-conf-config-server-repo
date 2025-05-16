@@ -14,7 +14,7 @@ eureka:
     metadata-map:
       # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
       # ==> (désactivé par défaut sinon).
-      swagger.aggregator.enabled: ${aggregator.eureka.enabled:false}
+      swagger.aggregator.enabled: ${aggregator.eureka.enabled}
 
 
 management:
