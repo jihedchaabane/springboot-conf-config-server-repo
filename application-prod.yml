@@ -9,7 +9,7 @@ params:
   gateway:
     uri: http://container-springboot-conf-gateway-api:8766
   gatewayOauth2:
-    uri: http://container-springboot-conf-gateway-api-oauth2:7766
+    uri: http://SPRINGBOOT-CONF-GATEWAY-API-OAUTH2
   zipkin:
     uri: http://container-zipkin:9411
   keystore:

@@ -9,7 +9,7 @@ params:
   gateway:
     uri: http://localhost:8766
   gatewayOauth2:
-    uri: http://localhost:7766
+    uri: http://SPRINGBOOT-CONF-GATEWAY-API-OAUTH2
   zipkin:
     uri: http://localhost:9411
   keystore:
