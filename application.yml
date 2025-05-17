@@ -4,35 +4,38 @@ eureka:
       defaultZone: ${params.eureka.uri}
     fetch-registry: true
     register-with-eureka: true
-## 'gr-conf-swagger-aggregator' Cors issues fix..
-    # Rafraîchir le registre toutes les X secondes
-    registry-fetch-interval-seconds: ${eureka.fetch.seconds:60}
+    #----> 'gr-conf-swagger-aggregator' Cors issues fix : Rafraîchir le registre toutes les X secondes
+    registry-fetch-interval-seconds: ${eureka.fetch.seconds:25}
   instance:
     preferIpAddress: true
-    ipAddress: ${host.where.docker.ip}
-    hostname: ${spring.application.name}
+    #----> Remove ipAddress and hostname to let Eureka resolve dynamically
+    #ipAddress: ${host.where.docker.ip}
+    #----> Optionally, set a non-qualified hostname if needed
+    #hostname: ${spring.application.name}
+    instance-id: ${spring.application.name}:${random.int}
+
     metadata-map:
-      # Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
-      # ==> (désactivé par défaut sinon).
+      #----> Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
+      #----> (désactivé par défaut sinon).
       swagger.aggregator.enabled: ${aggregator.eureka.enabled:false}
 
 
 management:
   endpoints:
-    # To expose all management endpoints
+    #----> To expose all management endpoints
     web.exposure.include: "*"
-    # To expose defined endpoints
-    # web.exposure.include: health, caches, env, info, logfile, httptrace, metrics
+    #----> To expose defined endpoints
+    #----> web.exposure.include: health, caches, env, info, logfile, httptrace, metrics
     web.base-path: /actuator
     web.enable.include: health
   endpoint:
     health:
       show-details: ALWAYS
 
-## START : uri de gr-conf-swagger-aggregator
+##----> START : uri de gr-conf-swagger-aggregator
 swagger-params:
-  #issuerUri: ${params.oauth2.issuerUri}
-  issuerUri: ${auth.server.issuerUri}
+  issuerUri: ${params.oauth2.issuerUri}
+  #issuerUri: ${auth.server.issuerUri}
   servers:
     liste:
       - uri: http://localhost:${server.port}
@@ -46,4 +49,4 @@ swagger-params:
   aggregator:
     enabled: ${aggregator.eureka.enabled:false}
     cors:
-      uri: http://${host.where.docker.ip}:8765
+      uri: ${params.swaggerAggregator.uri}

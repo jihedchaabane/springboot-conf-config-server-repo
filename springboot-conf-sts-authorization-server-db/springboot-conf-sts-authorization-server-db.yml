@@ -2,8 +2,8 @@ spring:
   security:
     oauth2:
       authorizationserver:
-        #issuer: ${params.oauth2.issuerUri}
-        issuer: ${auth.server.issuerUri}
+        issuer: ${params.oauth2.issuerUri}
+        #issuer: ${auth.server.issuerUri}
   datasource:
     url: jdbc:postgresql://${database.host}:${database.port}/${database.name}
     driver-class-name: org.postgresql.Driver
