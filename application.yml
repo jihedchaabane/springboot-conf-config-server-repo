@@ -35,7 +35,6 @@ management:
 ##----> START : uri de gr-conf-swagger-aggregator
 swagger-params:
   issuerUri: ${params.oauth2.issuerUri}
-  #issuerUri: ${auth.server.issuerUri}
   servers:
     liste:
       - uri: http://localhost:${server.port}
