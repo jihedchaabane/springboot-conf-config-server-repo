@@ -1,6 +1,6 @@
 #local
 host.where.docker.ip: localhost
-
+# TODO to delete : issue @Bean public ProviderSettings providerSettings() {}
 auth.server.issuerUri: http://${host.where.docker.ip}:8764
 
 params:
