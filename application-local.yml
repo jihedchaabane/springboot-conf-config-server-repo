@@ -5,7 +5,7 @@ params:
   eureka:
     uri: http://localhost:8761/eureka/
   oauth2:
-    issuerUri: http://localhost:8764
+    issuerUri: http://SPRINGBOOT-CONF-STS-AUTHORIZATION-SERVER-DB
   gateway:
     uri: http://localhost:8766
   gatewayOauth2:

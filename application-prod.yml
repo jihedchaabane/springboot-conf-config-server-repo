@@ -5,7 +5,7 @@ params:
   eureka:
     uri: http://container-springboot-conf-eureka-server:8761/eureka/
   oauth2:
-    issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
+    issuerUri: http://SPRINGBOOT-CONF-STS-AUTHORIZATION-SERVER-DB
   gateway:
     uri: http://container-springboot-conf-gateway-api:8766
   gatewayOauth2:
