@@ -1,6 +1,6 @@
 caller:
   destination:
-    # springboot-oauth2-external-resttemplate-consumer from swagger.
+    # sts-oauth2-consumer-resttemplate from swagger.
     client0:
       resourceUri:
       clientId:
