@@ -1,3 +1,7 @@
+aggregator.eureka.enabled: false
+params.restTemplateConfiguration.enabled: false
+swagger-params.enabled: false
+
 spring:
   security:
     oauth2:

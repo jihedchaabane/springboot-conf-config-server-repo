@@ -1,3 +1,7 @@
+aggregator.eureka.enabled: true
+params.restTemplateConfiguration.enabled: false
+swagger-params.enabled: true
+
 spring:
   zipkin:
     base-url: ${params.zipkin.uri}
@@ -5,13 +9,4 @@ spring:
     sampler:
       probability: 1.0
 
-springdoc:
-  api-docs:
-    path: /v3/api-docs
-  swagger-ui:
-    path: /swagger-ui.html
-    operations-sorter: method
-    tags-sorter: alpha
-    # Activer le mode "try it out" pour tous les endpoints
-    try-it-out-enabled: true
-  show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
+	  

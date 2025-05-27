@@ -1,5 +1,3 @@
-aggregator.eureka.enabled: true
-      
 caller:
   destination:
     # gr-nohttps-ssl-department from swagger.

@@ -1,11 +1,11 @@
 eureka:
   client:
-    service-url:
-      defaultZone: ${params.eureka.uri}
+    enabled: true
     fetch-registry: true
     register-with-eureka: true
-    #----> 'gr-conf-swagger-aggregator' Cors issues fix : Rafraîchir le registre toutes les X secondes
     registry-fetch-interval-seconds: ${eureka.fetch.seconds:25}
+    service-url:
+      defaultZone: ${params.eureka.uri}
   instance:
     preferIpAddress: true
     #----> Remove ipAddress and hostname to let Eureka resolve dynamically
@@ -13,24 +13,24 @@ eureka:
     #----> Optionally, set a non-qualified hostname if needed
     #hostname: ${spring.application.name}
     instance-id: ${spring.application.name}:${random.int}
-
     metadata-map:
       #----> Indique que ce microservice doit être inclus dans le swagger de 'gr-conf-swagger-aggregator'
       #----> (désactivé par défaut sinon).
       swagger.aggregator.enabled: ${aggregator.eureka.enabled:false}
-
+      management.context-path: /actuator
 
 management:
   endpoints:
-    #----> To expose all management endpoints
     web.exposure.include: "*"
-    #----> To expose defined endpoints
-    #----> web.exposure.include: health, caches, env, info, logfile, httptrace, metrics
     web.base-path: /actuator
     web.enable.include: health
   endpoint:
     health:
       show-details: ALWAYS
+  # --> Include git.properties generated informations (plugin:git-commit-id-plugin) in /actuator/info endpoint.
+  info:
+    git:
+      mode: full
 
 ##----> START : uri de gr-conf-swagger-aggregator
 swagger-params:
@@ -43,7 +43,7 @@ swagger-params:
         description: Development environment
       - uri: http://10.0.0.500:${server.port}
         description: Homologation environment
-      - uri: http://10.0.0.500:${server.port}
+      - uri: http://10.0.0.600:${server.port}
         description: Production environment
   aggregator:
     enabled: ${aggregator.eureka.enabled:false}

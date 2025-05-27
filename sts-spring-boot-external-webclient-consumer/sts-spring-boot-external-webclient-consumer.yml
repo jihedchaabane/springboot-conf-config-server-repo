@@ -1,3 +1,7 @@
+aggregator.eureka.enabled: true
+params.restTemplateConfiguration.enabled: false
+swagger-params.enabled: true
+
 spring:
   security:
     oauth2:
@@ -32,19 +36,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-
-## START SWAGGER
-springdoc:
-  api-docs:
-    path: /v3/api-docs
-  swagger-ui:
-    path: /swagger-ui.html
-    operations-sorter: method
-    tags-sorter: alpha
-    # Activer le mode "try it out" pour tous les endpoints
-    try-it-out-enabled: true
-  show-actuator: false # activer sinon pour voir les endpoints actuator dans le swagger.
-## END SWAGGER
 
 logging:
   level:

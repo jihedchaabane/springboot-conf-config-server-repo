@@ -7,6 +7,3 @@ caller:
       clientSecret: secret
       scopes: products.read,products.write
       registrationId: sts-default-registration
-
-## uri/enabled de gr-conf-swagger-aggregator
-aggregator.eureka.enabled: true

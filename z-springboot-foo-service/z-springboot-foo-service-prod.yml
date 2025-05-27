@@ -32,6 +32,3 @@ caller:
       clientSecret:
       scopes:
       registrationId: sts-helloworld-service-registration
-
-## uri/enabled de gr-conf-swagger-aggregator
-aggregator.eureka.enabled: true

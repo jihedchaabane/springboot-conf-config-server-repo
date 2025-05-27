@@ -6,12 +6,6 @@ params:
     uri: http://container-springboot-conf-eureka-server:8761/eureka/
   oauth2:
     issuerUri: http://container-springboot-conf-sts-authorization-server-db:8764
-    #----> for SPRINGBOOT-OAUTH2-EXTERNAL-RESTTEMPLATE-CONSUMER until: 
-    #----> @TODO try to replace it with eureka discovery alternative.
-    #----> .issuer("http://SPRINGBOOT-CONF-STS-AUTHORIZATION-SERVER-DB")
-    loadBalancedIssuerUri: http://SPRINGBOOT-CONF-STS-AUTHORIZATION-SERVER-DB
-  gateway:
-    uri: http://container-springboot-conf-gateway-api:8766
   gatewayOauth2:
     uri: http://SPRINGBOOT-CONF-GATEWAY-API-OAUTH2
   swaggerAggregator:

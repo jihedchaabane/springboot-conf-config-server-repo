@@ -1,5 +1,3 @@
-aggregator.eureka.enabled: true
-
 caller:
   destination:
     # gr-https-ssl-ms4 from swagger.

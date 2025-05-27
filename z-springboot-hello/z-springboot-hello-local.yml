@@ -7,6 +7,3 @@ caller:
       clientSecret:
       scopes:
       registrationId:
-
-## uri/enabled de gr-conf-swagger-aggregator
-aggregator.eureka.enabled: true
