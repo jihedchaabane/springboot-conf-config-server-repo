@@ -1,6 +1,6 @@
 caller:
   destination:
-    # sts-spring-boot-external-webclient-consumer from swagger.
+    # sts-oauth2-consumer-webclient from swagger.
     client0:
       resourceUri:
       clientId: products-client
