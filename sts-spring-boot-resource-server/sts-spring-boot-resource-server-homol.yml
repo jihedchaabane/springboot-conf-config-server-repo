@@ -1,3 +1,9 @@
+springdoc:
+  swagger-ui:
+    oauth:
+      clientId: products-client
+      clientSecret: secret
+
 caller:
   destination:
     # sts-spring-boot-resource-server from swagger.

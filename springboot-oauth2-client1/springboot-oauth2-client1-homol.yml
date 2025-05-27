@@ -1,3 +1,9 @@
+springdoc:
+  swagger-ui:
+    oauth:
+      clientId: client1
+      clientSecret: secret1
+
 caller:
   destination:
     # springboot-oauth2-client1 from swagger.
