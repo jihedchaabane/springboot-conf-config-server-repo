@@ -6,7 +6,7 @@ springdoc:
 
 caller:
   destination:
-    # sts-spring-boot-resource-server from swagger.
+    # sts-oauth2-products-resource from swagger.
     client0:
       resourceUri:
       clientId: products-client

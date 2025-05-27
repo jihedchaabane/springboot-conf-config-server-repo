@@ -7,7 +7,7 @@ spring:
     oauth2:
       client:
         registration:
-          sts-spring-boot-resource-server-registration:
+          sts-oauth2-products-resource-registration:
             provider: sts-provider
             client-id: ${caller.destination.client1.clientId}
             client-secret: ${caller.destination.client1.clientSecret}

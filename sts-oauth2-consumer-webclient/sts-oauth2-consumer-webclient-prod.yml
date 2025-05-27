@@ -7,21 +7,21 @@ caller:
       clientSecret: secret
       scopes: products.read,products.write,client1.read,client1.write,client2.read,client2.write
       registrationId: sts-default-registration
-    # sts-spring-boot-resource-server
+    # sts-oauth2-products-resource
     client1:
       resourceUri: ${params.gatewayOauth2.uri}
       clientId: products-client
       clientSecret: secret
       scopes: products.read,products.write
-      registrationId: sts-spring-boot-resource-server-registration
-    # springboot-oauth2-client1
+      registrationId: sts-oauth2-products-resource-registration
+    # sts-oauth2-client1-resource
     client2:
       resourceUri: ${params.gatewayOauth2.uri}
       clientId: client1
       clientSecret: secret1
       scopes: client1.read,client1.write,client2.read,client2.write
       registrationId: sts-oauth2-client1-resource-server-registration
-    # springboot-oauth2-client2
+    # sts-oauth2-client2-resource
     client3:
       resourceUri: ${params.gatewayOauth2.uri}
       clientId: client2
