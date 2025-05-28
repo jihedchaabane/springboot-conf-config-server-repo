@@ -1,0 +1,34 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          feign:
+            provider: sts-provider
+            client-id: gr-resource-consumer-feign
+            client-secret: consumer-feign
+            scope: ms1.read,ms2.read,ms3.read
+            client-name: gr-resource-consumer-feign-registration
+            authorization-grant-type: client_credentials
+        provider:
+          sts-provider:
+            token-uri: ${params.oauth2.issuerUri}/oauth2/token
+
+  zipkin:
+    base-url: ${params.zipkin.uri}
+  sleuth:
+    sampler:
+      probability: 1.0
+
+feign:
+  client:
+    config:
+      ## --> Debug Feign token requests.
+      gr-resource-consumer-feign-protected:
+        loggerLevel: full
+      ## --> Debug Feign token requests.
+      gr-resource-consumer-feign-public:
+        loggerLevel: full

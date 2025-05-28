@@ -1,0 +1,13 @@
+aggregator.eureka.enabled: true
+params.restTemplateConfiguration.enabled: false
+swagger-params.enabled: true
+
+caller:
+  destination:
+    # gr-resource-consumer-webclient from swagger.
+    client0:
+      resourceUri:
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
