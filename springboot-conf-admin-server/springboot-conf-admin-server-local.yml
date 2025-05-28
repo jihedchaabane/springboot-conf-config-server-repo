@@ -1,0 +1,7 @@
+
+database:
+  host: 10.0.0.137
+  port: 5432
+  name: postgres_data_source
+  username: postgres_data_source
+  password: postgres_data_source

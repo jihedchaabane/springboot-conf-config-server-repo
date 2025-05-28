@@ -57,3 +57,23 @@ spring:
 #        mail:
 #          to: jihed@gmail.com, chaabane@gmail.com
 #          enabled: true
+
+  datasource:
+    url: jdbc:postgresql://${database.host}:${database.port}/${database.name}
+    driver-class-name: org.postgresql.Driver
+    username: ${database.username}
+    password: ${database.password}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      pool-name: HikariPool_SBOOT_ADMIN
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  hibernate:
+    ddl-auto: update
+    show-sql: false
