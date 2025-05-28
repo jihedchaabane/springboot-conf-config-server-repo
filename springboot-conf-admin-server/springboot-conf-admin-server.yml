@@ -3,6 +3,24 @@ params.restTemplateConfiguration.enabled: false
 swagger-params.enabled: false
 
 spring:
+  cloud:
+    discovery:
+      enabled: true		
+  security:
+    oauth2:
+      client:
+        registration:
+          ms3:
+            provider: sts-provider
+            client-id: gr-ms3-resource
+            client-secret: secret3
+            scope: actuator.read
+            client-name: gr-ms3-resource-registration
+            authorization-grant-type: client_credentials
+            client-authentication-method: client_secret_basic
+        provider:
+          sts-provider:
+            token-uri: ${params.oauth2.issuerUri}/oauth2/token
 # java -jar fakesmtp-2.0.jar -p 2525
 # https://threadminions.wordpress.com/2019/06/25/alert-with-spring-boot-admin-server/
 #  mail:
