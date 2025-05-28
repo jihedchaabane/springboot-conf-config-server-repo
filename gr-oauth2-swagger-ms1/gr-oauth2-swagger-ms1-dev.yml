@@ -1,0 +1,19 @@
+aggregator.eureka.enabled: true
+params.restTemplateConfiguration.enabled: false
+swagger-params.enabled: true
+
+springdoc:
+  swagger-ui:
+    oauth:
+      clientId: gr-oauth2-swagger-ms1
+      clientSecret: swagger-ms1
+
+caller:
+  destination:
+    # gr-oauth2-swagger-ms1 from swagger.
+    client0:
+      resourceUri:
+      clientId: gr-oauth2-swagger-ms1
+      clientSecret: swagger-ms1
+      scopes: read,write
+      registrationId: gr-oauth2-swagger-ms1
