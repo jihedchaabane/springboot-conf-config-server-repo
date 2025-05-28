@@ -3,10 +3,10 @@ caller:
     # sts-oauth2-consumer-webclient from swagger.
     client0:
       resourceUri:
-      clientId: products-client
-      clientSecret: secret
-      scopes: products.read,products.write,client1.read,client1.write,client2.read,client2.write
-      registrationId: sts-default-registration
+      clientId:
+      clientSecret:
+      scopes:
+      registrationId:
     # sts-oauth2-products-resource
     client1:
       resourceUri: ${params.gatewayOauth2.uri}
