@@ -41,7 +41,7 @@ spring:
   sleuth:
     sampler:
       # Désactiver l'échantillonnage si vous ne voulez pas générer de traces inutiles ( 0.0 ).
-      probability: ${params.zipkin.probability}
+      probability: ${params.zipkin.probability:0.0}
     # Pour une meilleure résilience, configurer un mécanisme de repli (fallback) en cas d'échec de connexion à Zipkin.
     # Cela garantit que les traces sont envoyées de manière asynchrone via HTTP, et les erreurs réseau sont ignorées sans bloquer l'application.
     async:
