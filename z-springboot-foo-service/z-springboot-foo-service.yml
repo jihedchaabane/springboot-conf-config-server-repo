@@ -9,9 +9,5 @@ aggregator.eureka.enabled: true
 params.restTemplateConfiguration.enabled: true
 swagger-params.enabled: true
 
-spring:
-  zipkin:
-    base-url: ${params.zipkin.uri}
-  sleuth:
-    sampler:
-      probability: 1.0
+zipkin.enabled: true
+zipkin.sleuth.probability: 1.0

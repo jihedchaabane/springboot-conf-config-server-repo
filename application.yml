@@ -31,6 +31,21 @@ management:
   info:
     git:
       mode: full
+      
+spring:
+  zipkin:
+    base-url: ${params.zipkin.uri}
+    enabled: ${params.zipkin.enabled:false}
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      # Désactiver l'échantillonnage si vous ne voulez pas générer de traces inutiles.
+      probability: 1.0
+    # Pour une meilleure résilience, configurer un mécanisme de repli (fallback) en cas d'échec de connexion à Zipkin.
+    # Cela garantit que les traces sont envoyées de manière asynchrone via HTTP, et les erreurs réseau sont ignorées sans bloquer l'application.
+    async:
+      enabled: true
 
 ##----> START : uri de gr-conf-swagger-aggregator
 swagger-params:

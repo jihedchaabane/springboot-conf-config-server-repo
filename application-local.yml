@@ -12,6 +12,8 @@ params:
     uri: http://localhost:8766  # Didnot work : localhost, 192.168.56.1, GR-OAUTH2-SWAGGER-AGGREGATOR, GR-CONF-SWAGGER-AGGREGATOR
   zipkin:
     uri: http://localhost:9411
+    enabled: ${zipkin.enabled:false}
+    probability: ${zipkin.probability}
   keystore:
     type: PKCS12
     path: file:C:/E/TOOLS/ms2.p12
