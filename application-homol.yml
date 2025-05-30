@@ -13,7 +13,7 @@ params:
   zipkin:
     uri: http://container-zipkin:9411
     enabled: ${zipkin.enabled:false}
-    probability: ${zipkin.probability}
+    probability: ${zipkin.sleuth.probability}
   keystore:
     type: PKCS12
     path: file:/certificates/ms2.p12

@@ -13,7 +13,7 @@ params:
   zipkin:
     uri: http://localhost:9411
     enabled: ${zipkin.enabled:false}
-    probability: ${zipkin.probability}
+    probability: ${zipkin.sleuth.probability}
   keystore:
     type: PKCS12
     path: file:C:/E/TOOLS/ms2.p12
